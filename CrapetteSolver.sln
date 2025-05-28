@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrapetteSolver.Core", "src\CrapetteSolver.Core\CrapetteSolver.Core.csproj", "{1A80C340-96A2-4D04-B092-56D3A1EED815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrapetteSolver.GameRules", "src\CrapetteSolver.GameRules\CrapetteSolver.GameRules.csproj", "{A3BE4A33-6D95-4265-BFFD-6997B326CD26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CCC68491-EA15-4288-9B7B-D4D79953AEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrapetteSolver.Tests", "tests\CrapetteSolver.Tests\CrapetteSolver.Tests.csproj", "{0786336C-A392-4644-9A26-08E2AE86F02A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A80C340-96A2-4D04-B092-56D3A1EED815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A80C340-96A2-4D04-B092-56D3A1EED815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A80C340-96A2-4D04-B092-56D3A1EED815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A80C340-96A2-4D04-B092-56D3A1EED815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3BE4A33-6D95-4265-BFFD-6997B326CD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BE4A33-6D95-4265-BFFD-6997B326CD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BE4A33-6D95-4265-BFFD-6997B326CD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BE4A33-6D95-4265-BFFD-6997B326CD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0786336C-A392-4644-9A26-08E2AE86F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0786336C-A392-4644-9A26-08E2AE86F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0786336C-A392-4644-9A26-08E2AE86F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0786336C-A392-4644-9A26-08E2AE86F02A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A80C340-96A2-4D04-B092-56D3A1EED815} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A3BE4A33-6D95-4265-BFFD-6997B326CD26} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0786336C-A392-4644-9A26-08E2AE86F02A} = {CCC68491-EA15-4288-9B7B-D4D79953AEBB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF98BF80-9A22-4055-B236-11D4B5503F80}
+	EndGlobalSection
+EndGlobal
