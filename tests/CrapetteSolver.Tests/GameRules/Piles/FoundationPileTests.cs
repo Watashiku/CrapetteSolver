@@ -3,13 +3,13 @@ using CrapetteSolver.GameRules.Piles;
 
 namespace CrapetteSolver.Tests.GameRules.Piles;
 
-public class MainPileAscendingTests
+public class FoundationPileTests
 {
     [Fact]
-    public void MainPileAscending_ShouldBeInitializedEmpty()
+    public void FoundationPile_ShouldBeInitializedEmpty()
     {
         // Arrange & Act
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
 
         // Assert
         Assert.True(pile.IsEmpty);
@@ -20,7 +20,7 @@ public class MainPileAscendingTests
     public void CanPlaceCard_ShouldAllowPlacingAceWhenPileIsEmpty()
     {
         // Arrange
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
         var ace = new Card(Rank.Ace, Suit.Spades);
 
         // Act
@@ -34,7 +34,7 @@ public class MainPileAscendingTests
     public void CanPlaceCard_ShouldNotAllowPlacingNonAceWhenPileIsEmpty()
     {
         // Arrange
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
         var king = new Card(Rank.King, Suit.Spades);
 
         // Act
@@ -48,7 +48,7 @@ public class MainPileAscendingTests
     public void CanPlaceCard_ShouldAllowPlacingNextRankOfSameSuit()
     {
         // Arrange
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
         pile.AddCard(new Card(Rank.Ace, Suit.Clubs));
 
         var twoOfClubs = new Card(Rank.Two, Suit.Clubs);
@@ -64,7 +64,7 @@ public class MainPileAscendingTests
     public void CanPlaceCard_ShouldNotAllowPlacingDifferentSuit()
     {
         // Arrange
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
         pile.AddCard(new Card(Rank.Ace, Suit.Clubs));
         var twoOfSpades = new Card(Rank.Two, Suit.Spades);
 
@@ -79,7 +79,7 @@ public class MainPileAscendingTests
     public void CanPlaceCard_ShouldNotAllowPlacingIncorrectRank()
     {
         // Arrange
-        var pile = new MainPileAscending();
+        var pile = new FoundationPile();
         pile.AddCard(new Card(Rank.Ace, Suit.Clubs));
         var threeOfClubs = new Card(Rank.Three, Suit.Clubs);
 

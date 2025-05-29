@@ -3,13 +3,13 @@ using CrapetteSolver.GameRules.Piles;
 
 namespace CrapetteSolver.Tests.GameRules.Piles;
 
-public class MainPileDescendingTests
+public class TableauPileTests
 {
     [Fact]
-    public void MainPileDescending_ShouldBeInitializedEmpty()
+    public void TableauPile_ShouldBeInitializedEmpty()
     {
         // Arrange & Act
-        var pile = new MainPileDescending();
+        var pile = new TableauPile();
 
         // Assert
         Assert.True(pile.IsEmpty);
@@ -20,7 +20,7 @@ public class MainPileDescendingTests
     public void CanPlaceCard_ShouldAllowPlacingAnyCardWhenPileIsEmpty()
     {
         // Arrange
-        var pile = new MainPileDescending();
+        var pile = new TableauPile();
         var card = new Card(Rank.Eight, Suit.Diamonds);
 
         // Act
@@ -34,7 +34,7 @@ public class MainPileDescendingTests
     public void CanPlaceCard_ShouldAllowPlacingNextLowerRankOfDifferentColor()
     {
         // Arrange
-        var pile = new MainPileDescending();
+        var pile = new TableauPile();
         pile.AddCard(new Card(Rank.Queen, Suit.Spades));    // Noir
         var cardToPlace = new Card(Rank.Jack, Suit.Hearts); // Rouge
 
@@ -49,7 +49,7 @@ public class MainPileDescendingTests
     public void CanPlaceCard_ShouldNotAllowPlacingSameColor()
     {
         // Arrange
-        var pile = new MainPileDescending();
+        var pile = new TableauPile();
         pile.AddCard(new Card(Rank.Queen, Suit.Spades));    // Noir
         var cardToPlace = new Card(Rank.Jack, Suit.Clubs);  // Noir
 
@@ -64,7 +64,7 @@ public class MainPileDescendingTests
     public void CanPlaceCard_ShouldNotAllowPlacingIncorrectRank()
     {
         // Arrange
-        var pile = new MainPileDescending();
+        var pile = new TableauPile();
         pile.AddCard(new Card(Rank.Queen, Suit.Spades));    // Q
         var cardToPlace = new Card(Rank.Ten, Suit.Hearts);  // 10
 

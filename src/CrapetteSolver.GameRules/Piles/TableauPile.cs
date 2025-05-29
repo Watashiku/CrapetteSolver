@@ -2,9 +2,9 @@
 
 namespace CrapetteSolver.GameRules.Piles;
 
-public class MainPileDescending : Pile
+public class TableauPile : Pile
 {
-    public MainPileDescending() : base() { }
+    public TableauPile() : base() { }
 
     public bool CanPlaceCard(Card cardToPlay)
     {
